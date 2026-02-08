@@ -1,7 +1,7 @@
 # ex1: enter 2 numbers and find the all prime numbers between entered numbers
 
 # sol1
-"""
+
 def isPrime(sayi):
     if sayi < 2:
         return False
@@ -19,9 +19,10 @@ for i in range(a, b + 1):
         print(2, end=' ')
     elif isPrime(i):
         print(i, end=' ')
-"""
+
+
 # sol2
-"""
+
 def asal_mi(sayi):
     if sayi < 2:
         return False
@@ -37,10 +38,10 @@ print(f'{a} ile {b} arasindaki asal sayilar')
 for i in range(a, b + 1):
     if asal_mi(i):
         print(i, end = ' ')
-"""
+
 
 # ex2: enter 2 numbers and find the all perfect numbers between entered numbers
-"""
+
 def isPerfect(sayi):
     toplam = 0
     for i in range(1, sayi):
@@ -58,12 +59,12 @@ b = int(input('enter an integer number: '))
 for i in range(a, b + 1):
     if isPerfect(i):
         print(i, end=' ')
-"""
+
 
 # ex3: ucgen sayilar
 
 # sol1:
-"""
+
 def ucgen_sayilar(n):
     dizi = [0]
     for i in range(1, n): # artis
@@ -72,10 +73,10 @@ def ucgen_sayilar(n):
 
 a = int(input('enter an integer number: '))
 print(ucgen_sayilar(a))
-"""
+
 
 # sol2:
-"""
+
 def ucgen_sayilar(n):
     dizi = []
     for i in range(1, n + 1):
@@ -85,12 +86,12 @@ def ucgen_sayilar(n):
 
 a = int(input('enter an integer number: '))
 print(ucgen_sayilar(a))
-"""
+
 
 # ex4: asal çarpanlara ayirma
 
 # sol1:
-"""
+
 def isPrime(a):
     if a < 2:
         return False
@@ -115,10 +116,10 @@ def asalCarpanlariBul(sayi):
 
 sayi = int(input('enter an integer number: '))
 print(asalCarpanlariBul(sayi))
-"""
+
 
 # sol2:
-"""
+
 def isPrime(a):
     if a < 2:
         return False
@@ -138,13 +139,13 @@ def asal_carpanlar(sayi):
 
 sayi = int(input('enter an integer number: '))
 print(asal_carpanlar(sayi))
-"""
+
 
 
 # ex6:
 
 # sol1:
-"""
+
 def calFact(sayi):
     if sayi < 1:
         return 1
@@ -153,5 +154,5 @@ def calFact(sayi):
 
 sayi = int(input('enter an integer number: '))
 print(calFact(sayi))
-"""
+
 

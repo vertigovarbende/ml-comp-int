@@ -1,7 +1,7 @@
 # ex2: fibonacci
 
 # sol1: fibonacci iteratif
-"""
+
 def fib(n):
     fib_list = [1, 1]
     for i in range(n):
@@ -10,9 +10,9 @@ def fib(n):
 
 n = int(input('enter an integer number: '))
 print(fib(n)[n-1])
-"""
+
 # sol2: fibonnaci iteratif
-"""
+
 def fib(n):
     a, b = 0, 1
     for i in range(n):
@@ -21,10 +21,10 @@ def fib(n):
 
 n = int(input('enter an integer number: '))
 print(fib(n))
-"""
+
 
 # sol3: fibonacci recursive
-"""
+
 def fib_recursive(n):
     if n <= 2:
         return 1
@@ -37,10 +37,10 @@ print(fib_recursive(7))
 n = int(input('enter an integer number: '))
 for i in range(1, n + 1):
     print(fib_recursive(i), end=' ')
-"""
+
 
 # ex3: tahmin oyunu
-"""
+
 def sayi_tahmin_oyunu():
     rastgele_sayi = random.randint(0, 100)
     tahmin_hakki = 10
@@ -60,39 +60,39 @@ def sayi_tahmin_oyunu():
         print(f"kaybettiniz. rasgele sayi: {rastgele_sayi}")
 
 sayi_tahmin_oyunu()
-"""
+
 
 # ex4: 'map', 'filter' 'lambda'
 
 # 'map'
-""" 
+
 sayilar = list(map(lambda x: x * 2, range(1, 6)))
 print(sayilar)
-"""
+
 
 # 'filter'
-"""
+
 sayilar = [1, 5, 8, 10, 3, 7]
 bes_ust = list(filter(lambda x: x > 5, sayilar))
 print(bes_ust)
 # 'map' ile farki
 bes_ust_map = list(map(lambda x: x > 5, sayilar))
 print(bes_ust_map) # False, False, True, True, False, True
-"""
+
 
 # 'lambda'
-"""
+
 topla = lambda x, y: x + y
 sonuc = topla(3, 4)
 print(sonuc)
-"""
 
-"""
+
+
 sayilar = [1, 2, 3, 4, 5]
 sonuc = list(map(lambda x: x ** 2, sayilar))
 print(sonuc)
-"""
-"""
+
+
 sayilar = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55]
 uc_kati = list(map(lambda x: x * 3, sayilar))
 print(uc_kati)
@@ -113,10 +113,10 @@ print(uc_kati_filtered2)
 
 uc_kati_filtered3 = list(map(lambda x: x * 3, filter(lambda x: x % 5 == 0, sayilar2)))
 print(uc_kati_filtered3)
-"""
+
 
 # ex5:
-"""
+
 ogrenciler = [
     {"ad": "ali", "not": 55},
     {"ad": "ayşe", "not": 72},
@@ -135,5 +135,5 @@ altmis_uzeri_buyuk = list(map(lambda x: {"ad": ogrenciler["ad"].capitalize, "not
 altmis_uzeri_buyuk = list(map(lambda x: {"ad": ogrenciler["ad"].capitalize, "not": ogrenciler["not"]}, altmis_uzeri))
 
 print(altmis_uzeri_buyuk)
-"""
+
 

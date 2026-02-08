@@ -1,11 +1,11 @@
 # example_1
-"""
+
 number = int(input('Enter an integer number: '))
 print(number % 2 and "Tek" or "Cift")
-"""
+
 
 # example_2
-"""
+
 n = int(input('n: '))
 numbers = []
 
@@ -14,17 +14,17 @@ for i in range(n):
     numbers.append(number)
 
 print(f'The biggest number in numbers list is: {max(numbers)}')
-"""
+
 
 # example_3
-"""
+
 text = input("text: ")
 reverse_text2 = text[::-1]
 print(reverse_text2)
-"""
+
 
 # example_4
-"""
+
 index = int(input('index: '))
 
 # 0 1 1 2 3 
@@ -34,10 +34,10 @@ for i in range(2, index):
     fib_numbers.append(number)
 
 print(f'index: {index}, fib_index: {fib_numbers}')
-"""
+
 
 # example_5
-"""
+
 number = int(input('Please enter an integer number: '))
 if number > 1:
     for i in range(2, number):
@@ -49,7 +49,6 @@ if number > 1:
             break
 else:
     print("asal degil")
-"""
 
 # example_6
 
