@@ -1,0 +1,109 @@
+PROJECT - SENTIMENT ANALYSIS // IMDB REVIEW
+
+CHAPTER - 0 - STAGES
+
+1-) Import Library : First of all, we have to import necessary library and datasets
+
+2-) Problem Description - Data Import : Sentiment analysis is the analysis of the comments in which we write our thoughts about a movie or TV series we watched or a product we bought etc.
+
+	- Here we will analyse the comments/view of the movies/series on IMDB to find out which one is good(positive) 	view/opinion/comment or bad(negative) view/opinion/comment.
+
+	- And we will figure out whether movies/series on IMBD are good or not
+
+	Data Import : What will we use to import data? Are we going to use data where come from library? or what 	else? (KERAS LIBRARY)
+
+3-) EDA (Exploratory Data Analysis) : We will go through the comments and we will discuss which word they used or how many characters are in each sentence?, We will go back over each words and find out which ones were most used. We will look at the length of all comment, we will discuss which word/comment do we have to use or not?
+
+
+4-) Preprocess: In terms of EDA, we will prepare our data for training process
+
+5-) Construct RNN:
+
+6-) Training NN (Neural Network): We trained/taught our model.
+
+7-) Evaluate Result: Using our test data set and Neural Network, we will evaluate our result
+
+
+
+
+CHAPTER - 1 - IMPORTING NECESSARY LIBRARIES & DATASETS
+
+- numpy library
+- matplotlib.pyplot
+- seaborn
+
+
+# imdb
+
+- Our datasets
+
+# pad_sequences
+
+- In order to train a NN using a Keras library, the size of the dataset that will provide input to the NN must be the same
+
+	- Using the pad_sequences method, we will fix the lenghts of all comments.
+
+	- Example : These are comments and we want to input these comments our NN but if we want to do that 	comments must be the same length.
+
+	- If we choose comment's length as '5'
+
+		1-) asdasd aasdasd asdasd adsd	 --> 1-) 0 asdasd aasdasd asdasd adsd
+		2-) asdasdsa			         --> 2-) asdasdsa 0000000 000000 0000
+		3-) asdasd gdfgd dfdfg		     --> 3-) asdasd gdfgd dfdfg 0000 0000
+
+
+# Sequential
+
+- I will add all my necessary layers to the sequential structure
+
+# Embedding
+
+- The layer we call embedding will be a layer that will allow us to convert integers of certain sizes into density vectors.
+
+# SimpleRNN, Dense, Activation(sigmoid function)
+
+
+
+CHAPTER - 2 - DATA SETS/IMPORT & PROBLEM DESCRIPTION
+
+
+PROBLEM DESCRIPTION
+
+# Sentiment analysis is the analysis of the comments in which we write our thoughts about a movie or TV series we watched or a product we bought etc
+
+	- The reason we do this analysis is that we are curious about the attitude of the person who wrote the 	article. (Positive -  Negative - Neutr)
+
+	- For example, as a sales company, we are launching a product and putting it on the market. If we conduct a 	sentiment analysis of the comments about this product, we can learn the attitudes about the product and in 	this case, we can make the product more sellable.
+
+
+	imdb sitesine girip yüzüklerin efendisini aç ve oradakı yorumlara bak
+
+		- We will take the comments and we will train comments with our NN. Then we will compare these 			comments with other comments to understand which one is a good comment or which one is bad comment
+
+		- But here, there are some problems. Plority. If we look at the comments that got 6 stars, should 		we take them as a good example or bad example?
+
+			- Our subjective opinions about the comments can create problems when tranin NN and getting 			results. For example, when we read the some of the comments first time, we can not 				understand whether comments is joking as an irony or not. But in this project I won't pay 			much attention.
+
+			- Other important this is EMOJI. These days, everybody using emoji to impress their feeling 			and we should make sense of emojies too.
+
+
+DATA SETS
+
+25.000 --> train movie  25.000 --> test movie
+
+# In this dataset, the most frequently used words are surrounded by integers, and the integer 1 corresponds to the most frequently used word.
+
+	path -> # This is the path we dowload the dataset
+
+ 	num_words -> # We would like to take every words in the dataset and comment. If we do 10.000, we say that ı 	want to take first 10.000 most used words
+
+	skip_top -> # Do we want to ignore some words in the dataset or not. If we want that we have to write 	words' int version.
+
+	maxlen -> comments length
+
+	others i didn't change # I did these ones same like in the keras
+
+
+
+CHAPTER - 3 EXPLORATORY DATA SCIENCE
+
